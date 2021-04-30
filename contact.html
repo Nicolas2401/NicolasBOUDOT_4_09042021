@@ -18,11 +18,11 @@
     <!-- La description et les keywords -->
     <meta name="description" content="Vous souhaitez prendre contact avec la chouette agence ? Parlez-nous de votre projet webdesign à travers notre formulaire.">
     <!-- Les scripts ne pouvant pas être appelés plus tard -->
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
 
 <!-- Analytics -->
  
@@ -53,7 +53,7 @@
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">Contact</a>
+						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -85,7 +85,7 @@
 	<div class="container bloc-lg">
 		<div class="row row-new">
 			<div class="col-xs-11 col-sm-6 mr-auto ml-auto">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate>
 					<div class="form-group">
 						<label for="name">
 							Nom
@@ -102,12 +102,13 @@
 						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+                        <textarea id="input_504" class="form-control" rows="4" cols="50"></textarea>
 					</div>
 					<div class="form-group">
 						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+                        <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -119,7 +120,7 @@
                     <p>
                         2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137365222!2d4.827978615530889!3d45.769524079105715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1619189492794!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137365222!2d4.827978615530889!3d45.769524079105715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1619189492794!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 			</div>
 		</div>
@@ -143,22 +144,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html" title="Lien Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html" title="Lien Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" title="Lien Dribble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html" title="Lien Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
